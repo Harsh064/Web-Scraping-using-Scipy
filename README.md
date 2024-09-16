@@ -9,12 +9,19 @@ This project scrapes news articles from the Livemint website using Scrapy. The s
 
 ## Steps to Follow:
 
-1. Navigate to the project directory:
-   cd livemint-news-scraper
+1. Install Scrapy: If you haven’t installed Scrapy yet, use:
+   pip install scrapy
+
+2. Create a Scrapy Project: In the terminal, navigate to the directory where you want your project and create a new Scrapy project:
+   scrapy startproject news_scraper
    
-2. code livemint.py file as requirement
-3. 
-4. Run the Scrapy spider (To scrap data and create a file):
+4. Navigate to the Project Directory:
+   cd news_scraper
+
+5. Create the Spider File: Create a spider for website by running the command:
+   scrapy genspider livemint livemint.com
+6. Modify the Spider: Inside spider file (e.g., livemint_spider.py), write the code to scrape articles.
+7. Step 5: Output to JSON:
    scrapy crawl livemint -o livemint_articles.json
-   
+
 
